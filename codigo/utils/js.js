@@ -3,10 +3,6 @@ const IIUrl = "../C-Estagiario/C-EstagiarioII/index.html"
 const IIIUrl = "../C-Estagiario/C-EstagiarioIII/index.html"
 const IVUrl = "../C-Estagiario/C-EstagiarioIV/index.html"
 
-var iframe = document.getElementById("iframe");
-var elmnt = iframe.contentWindow.document.getElementsByTagName("H1")[0];
-elmnt.style.display = "none";
-
 var count = 0
 
 goOn(true)
