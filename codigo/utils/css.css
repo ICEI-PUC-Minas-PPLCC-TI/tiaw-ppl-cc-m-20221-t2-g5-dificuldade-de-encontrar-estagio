@@ -1,40 +1,69 @@
-iframe{
-    height: 90vh;
-    width: 100%;
+html {
+    background-color: rgb(247, 247, 247);
+    overflow-y: hidden;
 }
 
-body{
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+body {
     margin: 0px;
 }
 
-main{
+main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    height: 100vh;
+}
+
+.coisa {
+    margin-top: 2rem;
+    width: 100%;
+    max-height: 480px;
+    max-width: 950px;
+    display: flex;
+    height: 100%;
+    background-color: #182c6d;
+    position: relative;
+    -webkit-box-shadow: 1px 2px 15px -1px #7D7D7D;
+    box-shadow: 1px 2px 15px -1px #7D7D7D;
+}
+
+.avancar {
+    transition: 1s;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    height: 40px;
+    width: 70px;
+    border: none;
+    background-color: #182c6d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.avancar:hover{
+    background-color: #1b3792;
+    transition: 1s;
 }
 
 
-
-
-/* .avancar{
-    height: 2.5rem;
-    border: none;   
-    border-radius: 10px;
-    color: aliceblue;
-    background-color: #182c6d;
-    position: fixed;
-    right: 7px;
-    bottom: 29px;
-} */
 /*
 Navbar
 */
-#imgnav{
+#imgnav {
     width: 4rem;
     margin: 0.75rem;
 }
 
-#btnnav{
+
+#btnnav {
     font-family: 'Dicipullus';
     margin-right: 2rem;
     width: 4rem;
@@ -46,10 +75,12 @@ Navbar
     border-color: #182c6d;
     font-size: larger;
 }
-#btnnav:hover{
+
+#btnnav:hover {
     text-decoration: underline;
 }
-.nav{
+
+.nav {
     width: 100%;
     background-color: #182c6d;
     display: flex;
