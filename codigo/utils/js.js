@@ -4,31 +4,106 @@ const IIIUrl = "../C-Estagiario/C-EstagiarioIII/index.html"
 const IVUrl = "../C-Estagiario/C-EstagiarioIV/index.html"
 
 var count = 0
+const myIframe = document.getElementById('MyIframe')
 
-goOn(true)
+goOn(true,false)
 
-function goOn(firstView) {
-    if (firstView) {
-        count = 0
-    } else {
-        count++
+
+function goOn(firstView, clicked) {
+    if(!clicked){
+        if (firstView) {
+            count = 0
+            myIframe.src = IUrl;
+        }
     }
-    console.log(count)
-    switch (count) {
-        case 0:
-            iframe.src = IUrl;
+    if(clicked){
+        switch (count) {
+            case 0:
+                getFormsIValue()
+                count++
+                myIframe.src = IIUrl;
             break
         case 1:
-            iframe.src = IIUrl;
+            getFormsIIValue()
+            count++
+            myIframe.src = IIIUrl;
             break
         case 2:
-            iframe.src = IIIUrl;
+            getFormsIIIValue()
+            count++
+            myIframe.src = IVUrl;
             break
         case 3:
-            iframe.src = IVUrl
+            getFormsIVValue()
+            count++
             break
+        case 4:
+            createAllForm()
+        }
     }
-    if (count > 3) {
-        console.log("fim do fluxo")
+
+}
+
+
+function getFormsIValue() {
+    const iframeWindow = myIframe.contentWindow;
+    var form = iframeWindow.document.getElementById("formI");
+    if (form.name.value != "" && form.email.value != "" && form.pass.value != "" && form.confirmPass.value != "") {
+
+        if (form.pass.value === form.confirmPass.value) {
+            var firstOne = {
+                "name": form.name.value,
+                "email": form.email.value,
+                "pass": form.pass.value,
+                "confimPass": form.confirmPass.value
+            }
+        } else {
+            console.log("senha invalida")
+        }
+        console.log(firstOne);
     }
+}
+
+function getFormsIIValue() {
+    const iframeWindow = myIframe.contentWindow;
+    var form = iframeWindow.document.getElementById("formII");
+    if (form.instEnsino.value != "" && form.tipoFormacao.value != "") {
+        var secondOne = {
+            "instEnsino": form.instEnsino.value,
+            "tipoFormacao": form.tipoFormacao.value,
+            "andamento": form.andamento.value,
+        }
+        console.log(secondOne);
+    }
+}
+
+function getFormsIIIValue() {
+    const iframeWindow = myIframe.contentWindow;
+    var form = iframeWindow.document.getElementById("formIII");
+
+    var tirdOne = {
+        "empOrAuto": form.empOrAuto.value,
+        "cargo": form.cargo.value,
+        "breveDesc": form.breveDesc.value,
+    }
+    console.log(tirdOne);
+}
+
+function getFormsIVValue() {
+    const iframeWindow = myIframe.contentWindow;
+    var form = iframeWindow.document.getElementById("formIV");
+
+    var lastOne = {
+        "tecnicaCH": form.tecnicaCH.value,
+        "cognitivaCH": form.cognitivaCH.value,
+    }
+    console.log(lastOne);
+}
+
+function createAllForm(){
+    localStorage.setItem('firstOne', firstOne)
+    localStorage.setItem('secondOne', secondOne)
+    localStorage.setItem('tirdOne', tirdOne)
+    localStorage.setItem('lastOne', lastOne)
+
 }

@@ -54,6 +54,7 @@ main {
 }
 
 
+
 /*
 Navbar
 */
@@ -61,7 +62,6 @@ Navbar
     width: 4rem;
     margin: 0.75rem;
 }
-
 
 #btnnav {
     font-family: 'Dicipullus';
@@ -86,4 +86,6 @@ Navbar
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0%;
 }

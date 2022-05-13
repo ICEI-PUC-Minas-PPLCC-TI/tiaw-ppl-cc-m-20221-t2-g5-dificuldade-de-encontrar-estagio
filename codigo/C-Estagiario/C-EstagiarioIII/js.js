@@ -1,10 +1,6 @@
-const form = document.getElementById('formularioI')
+
+const form = document.getElementById('formIII')
 
 function exibir(){
-    console.log("sdsdds")
     form.style.visibility="visible"
 }
-
-$('.datepicker').datepicker({
-    inline: true
-  });
