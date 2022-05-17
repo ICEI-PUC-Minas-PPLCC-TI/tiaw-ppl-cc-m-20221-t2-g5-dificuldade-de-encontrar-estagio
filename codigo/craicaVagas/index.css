@@ -1,19 +1,29 @@
+
+h8{
+    font-style: italic;
+    
+}
 .Novavaga{
-    color: rgb(61, 61, 185);
-    text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
     font-size: 125%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 
 }
 body{
     background-color: #a8a8a8;
+ 
 }
 .modal-footer{
-    background-color: #a8a8a8;
+    background-color: #182c6d;
 }
-.modal-header{
-    background-color: #a8a8a8;
+.modal-header{    
+    background-color: #182c6d;
+    color: white;       
 }
 .modal-title{
     font-size: 200%;
@@ -21,4 +31,17 @@ body{
 .nova-vaga{
     font-size: 100%;
 }
+.txt{
+    border:none; 
+    border-bottom: 2px solid #182c6d;    
+    outline: none;
+}
+.modal-content{
+    background-color: #a8a8a8;
+}
+.boxCheckbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
+}
