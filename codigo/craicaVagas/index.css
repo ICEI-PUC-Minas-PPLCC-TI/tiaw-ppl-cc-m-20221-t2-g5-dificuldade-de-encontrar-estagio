@@ -35,6 +35,7 @@ body{
     border:none; 
     border-bottom: 2px solid #182c6d;    
     outline: none;
+    margin-bottom: 1.3rem;
 }
 .modal-content{
     background-color: #a8a8a8;
@@ -43,5 +44,6 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 1.3rem;
 
 }
