@@ -2,22 +2,20 @@ const IUrl = "../C-Estagiario/index.html"
 const IIUrl = "../C-Estagiario/C-EstagiarioII/index.html"
 const IIIUrl = "../C-Estagiario/C-EstagiarioIII/index.html"
 const IVUrl = "../C-Estagiario/C-EstagiarioIV/index.html"
-const cadastroUrl = "../cardSelectpage/index.html"
 
 var count = 0
 const myIframe = document.getElementById('MyIframe')
 
-start()
 
-async function  start() {
-    var path = await localStorage.getItem("locate")
+
+ function  start() {
+    var path =  localStorage.getItem("locate")
     console.log(path)
-    if(path === "Cadastro"){
-        myIframe.src = cadastroUrl
+    if(path === "Estagiario"){
+        myIframe.src = IUrl
     }else{
         console.log('outro fluxo')
     }
-    myIframe.src=IUrl
 }
 
 function viewClick() {
@@ -127,4 +125,9 @@ function createAllForm(){
     localStorage.setItem('tirdOne', tirdOne)
     localStorage.setItem('lastOne', lastOne)
 
+}
+
+window.onload = () => {
+    console.log("fui chamado ")
+    start()
 }
