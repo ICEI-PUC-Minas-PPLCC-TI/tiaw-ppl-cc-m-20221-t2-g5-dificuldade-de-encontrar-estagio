@@ -29,34 +29,37 @@
 
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="Novavaga">
+        <form id="novavaga" class="Novavaga">
 
-          <input type="text" name="" id="" class="txt" placeholder="Nome:">
+          <input type="text" name="" id="ipnome" class="txt" placeholder="Nome:">
           <div class="boxCheckbox">
             <h7 class="turno" id="Turno">Turno (pode escolher mais de um):</h7>
             <div class="checkbox">
               <h8 class="manha" id="manha">Manhã</h8>
-              <input type="checkbox" name="" id="">
+              <input type="checkbox" name="" id="ipmanha">
               <h8 class="tarde" id="tarde">Tarde</h8>
-              <input type="checkbox" name="" id="">
+              <input type="checkbox" name="" id="iptarde">
               <h8 class="noite" id="noite">Noite</h8>
-              <input type="checkbox" name="" id="">
+              <input type="checkbox" name="" id="ipnoite">
             </div>
           </div>
 
-          <input type="text" name="" id="" class="txt" placeholder="Área de atuação:">
-          <input type="text" name="" id="" class="txt" placeholder="Horas diárias:">
+          <input type="text" name="" id="ipatuacao" class="txt" placeholder="Área de atuação:">
+          <input type="text" name="" id="iphoras" class="txt" placeholder="Horas diárias:">
+          <input type="text" name="" id="ipdescricao" class="txt" placeholder="Descrição da vaga:">
 
 
 
-        </div>
+        </form>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Avançar</button>
+          <button type="button" onclick="getFormsValue()" class="btn btn-primary">Avançar</button>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="./js.js"></script>
 
 </body>
 
