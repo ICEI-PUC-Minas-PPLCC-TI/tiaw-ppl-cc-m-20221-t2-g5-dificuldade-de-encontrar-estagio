@@ -1,18 +1,31 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7681645&assignment_repo_type=AssignmentRepo)
-# Nome do projeto
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+# Obstáculos na Busca por estágio
+O objetivo geral deste trabalho é a criação de uma aplicação Web que sirva como uma intermediadora na relação empresa-estagiário e vice-versa, trazendo um contato direto e simplificado entre as partes.
+Como objetivos específicos, podemos ressaltar:
+Comunicação limpa e direta entre as partes envolvidas;
+Aplicação simples, de fácil acesso e entendimento;
+Painel de divulgação de vagas disponíveis.
+
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Artur Ferreira
+* Augusto Noronha
+* Daniel Campos
+* Felipe Parreiras
+* Lucas Vilela
+* Marcos Eduardo
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Carlos Alberto Marques Pietrobom
+* Cleiton Silva Tavares
+* Daniel de Oliveira Capanema
+* Fátima de Lima Procopio Duarte
+* Max do Val Machado
+* Rommel Viera Carneiro
+* Simone de Assis Alves Lima
+* Walisson Ferreira de Carvalho
 
 ## Instruções de utilização
 

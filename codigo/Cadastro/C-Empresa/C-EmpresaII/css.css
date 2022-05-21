@@ -28,7 +28,7 @@ input:focus {
 }
 
 .card {
-    background-image: url("../images/curto.png");
+    background-image: url("../../images/curto.png");
     background-repeat: no-repeat;
     height: 10rem;
     width: 100%;
@@ -70,7 +70,7 @@ input:focus {
     .card {
         -webkit-box-shadow: 0px 0px 23px -2px #828282;
         box-shadow: 0px 0px 23px -2px #828282;
-        background-image: url("../images/pp.png");
+        background-image: url("../../images/empresa.png");
         background-repeat: no-repeat;
         height: 30rem;
         width: 30rem;
