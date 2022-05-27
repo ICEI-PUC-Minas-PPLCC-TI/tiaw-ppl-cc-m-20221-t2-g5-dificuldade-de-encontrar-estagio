@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Document</title>
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 <body>
-    
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Criar nova vaga
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nova Vaga</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="novavaga" class="Novavaga">
+
+          <input type="text" name="" id="ipnome" class="txt" placeholder="Nome:">
+          <div class="boxCheckbox">
+            <h7 class="turno" id="Turno">Turno (pode escolher mais de um):</h7>
+            <div class="checkbox">
+              <h8 class="manha" id="manha">Manhã</h8>
+              <input type="checkbox" name="" id="ipmanha">
+              <h8 class="tarde" id="tarde">Tarde</h8>
+              <input type="checkbox" name="" id="iptarde">
+              <h8 class="noite" id="noite">Noite</h8>
+              <input type="checkbox" name="" id="ipnoite">
+            </div>
+          </div>
+
+          <input type="text" name="" id="ipatuacao" class="txt" placeholder="Área de atuação:">
+          <input type="text" name="" id="iphoras" class="txt" placeholder="Horas diárias:">
+          <input type="text" name="" id="ipdescricao" class="txt" placeholder="Descrição da vaga:">
+
+
+
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" onclick="getFormsValue()" class="btn btn-primary">Avançar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js.js"></script>
+
 </body>
+
 </html>
