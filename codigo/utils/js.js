@@ -3,63 +3,89 @@ const IIUrl = "../C-Estagiario/C-EstagiarioII/index.html"
 const IIIUrl = "../C-Estagiario/C-EstagiarioIII/index.html"
 const IVUrl = "../C-Estagiario/C-EstagiarioIV/index.html"
 
+const empresaIUrl = "../Cadastro/C-Empresa/index.html"
+const empresaIIUrl = "../Cadastro/C-Empresa/C-EmpresaII/index.html"
+
+
 var count = 0
 const myIframe = document.getElementById('MyIframe')
 
 
 
- function  start() {
-    var path =  localStorage.getItem("locate")
-    console.log(path)
-    if(path === "Estagiario"){
-        myIframe.src = IUrl
-    }else{
-        console.log('outro fluxo')
-    }
-}
 
-function viewClick() {
-    var path = localStorage.getItem("locate")
-    if (path == 'C') {
-        goOn(true,false) 
-    }else{
-        console.log("Case E")
+function start() {
+    var path = localStorage.getItem("type")
+    console.log(path)
+    if (path === "Estagiario") {
+        myIframe.src = IUrl
+    } else {
+        myIframe.src = empresaIUrl
     }
 }
 
 
 function goOn(firstView, clicked) {
-    if(!clicked){
-        if (firstView) {
-            count = 0
-            myIframe.src = IUrl;
+    var path = localStorage.getItem("type")
+    if (path == 'Estagiario') {
+        if (!clicked) {
+            if (firstView) {
+                count = 0
+                myIframe.src = IUrl;
+            }
+        }
+        if (clicked) {
+            switch (count) {
+                case 0:
+                    getFormsIValue()
+                    count++
+                    myIframe.src = IIUrl;
+                    break
+                case 1:
+                    getFormsIIValue()
+                    count++
+                    myIframe.src = IIIUrl;
+                    break
+                case 2:
+                    getFormsIIIValue()
+                    count++
+                    myIframe.src = IVUrl;
+                    break
+                case 3:
+                    getFormsIVValue()
+                    alert("tudo certo")
+                    createAllForm()
+                    break
+
+            }
+        }
+    } else {
+        if (!clicked) {
+            if (firstView) {
+                count = 0
+                myIframe.src = empresaIUrl;
+            }
+        }
+        if (clicked) {
+            switch (count) {
+                case 0:
+                    // getFormsIValue()
+                    count++
+                    myIframe.src = empresaIIUrl;
+                    break
+                case 1:
+                    // getFormsIIValue()
+                    count++
+                    myIframe.src = empresaIIUrl;
+                    alert("tudo certo")
+
+                    break
+
+
+
+            }
         }
     }
-    if(clicked){
-        switch (count) {
-            case 0:
-                getFormsIValue()
-                count++
-                myIframe.src = IIUrl;
-            break
-        case 1:
-            getFormsIIValue()
-            count++
-            myIframe.src = IIIUrl;
-            break
-        case 2:
-            getFormsIIIValue()
-            count++
-            myIframe.src = IVUrl;
-            break
-        case 3:
-            getFormsIVValue()
-            count++
-            break
-        case 4:
-            createAllForm()
-        }
-    }
+
 
 }
 
@@ -119,7 +145,7 @@ function getFormsIVValue() {
     console.log(lastOne);
 }
 
-function createAllForm(){
+function createAllForm() {
     localStorage.setItem('firstOne', firstOne)
     localStorage.setItem('secondOne', secondOne)
     localStorage.setItem('tirdOne', tirdOne)
@@ -128,6 +154,8 @@ function createAllForm(){
 }
 
 window.onload = () => {
-    console.log("fui chamado ")
-    start()
+    if (localStorage.getItem('locate') === "Cadastro") {
+        start()
+    }
+    console.log("outro fluxo ")
 }
