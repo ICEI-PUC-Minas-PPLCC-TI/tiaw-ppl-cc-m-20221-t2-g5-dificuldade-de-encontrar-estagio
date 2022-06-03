@@ -113,7 +113,6 @@ input:focus {
 }
 
 .ck-box{
-    margin-top: 10px;
     width: 100%;
     display: flex;
     justify-content: start;
@@ -121,8 +120,7 @@ input:focus {
     flex-direction: row;
 }
 
-#tecnica{
-    margin-right: 30px;
+
 }
 
 @media only screen and (min-width: 950px) {

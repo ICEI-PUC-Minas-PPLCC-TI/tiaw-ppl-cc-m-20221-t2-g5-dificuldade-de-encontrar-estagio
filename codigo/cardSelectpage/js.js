@@ -1,5 +1,6 @@
 
 function typeCadastro(type) {
+
     
     if (type == 'Estagiario') {
        
@@ -13,5 +14,10 @@ function typeCadastro(type) {
         console.log(type);
         
     }
-    
+ 
+
+    localStorage.setItem('type', type)
+    location.href="../utils/nav.html"
+    console.log(type);
+
 }
