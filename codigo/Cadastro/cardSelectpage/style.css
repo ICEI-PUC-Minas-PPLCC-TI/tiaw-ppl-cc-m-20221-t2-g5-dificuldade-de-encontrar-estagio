@@ -1,10 +1,12 @@
-html {
-    height: 100%;
-    max-width: 950px;
-    margin: auto;
+body{
+    margin: 0px;
+display: flex;
+align-items: center;
+flex-direction: column;
 }
 
 main {
+    width: 50%;
     padding-top: 30px;
     padding: 4.5rem 10px 10px 10px;
     height: 70vh;
@@ -16,6 +18,7 @@ main {
 }
 
 .card {
+    cursor: pointer;
     -webkit-box-shadow: 0px 14px 30px 12px rgba(199, 199, 199, 0.82);
     box-shadow: 0px 14px 30px 12px rgba(199, 199, 199, 0.82);
     background-image: url("../images/curto.png");
@@ -58,6 +61,40 @@ main {
 .imgLogos {
     width: 3rem;
     height: 3rem;
+}
+/*
+Navbar
+*/
+#imgnav {
+    width: 4rem;
+    margin: 0.75rem;
+}
+
+#btnnav {
+    font-family: 'Dicipullus';
+    margin-right: 2rem;
+    width: 4rem;
+    height: 2.5rem;
+    background-color: #182c6d;
+    color: white;
+    font-size: larger;
+    border: solid 0.1rem;
+    border-color: #182c6d;
+    font-size: larger;
+}
+
+#btnnav:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    width: 100%;
+    background-color: #182c6d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0%;
 }
 
 @media only screen and (min-width: 708px) {
