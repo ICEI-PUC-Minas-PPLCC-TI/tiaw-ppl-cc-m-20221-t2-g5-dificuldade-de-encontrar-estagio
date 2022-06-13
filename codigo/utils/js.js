@@ -6,6 +6,9 @@ const IVUrl = "../C-Estagiario/C-EstagiarioIV/index.html"
 const empresaIUrl = "../Cadastro/C-Empresa/index.html"
 const empresaIIUrl = "../Cadastro/C-Empresa/C-EmpresaII/index.html"
 
+const loginEmpresa = "../LoginPage/indexEmpresa.html"
+const loginEstagiario = "../Loginpage/indexEstagiario.html"
+
 
 var count = 0
 const myIframe = document.getElementById('MyIframe')
@@ -14,12 +17,24 @@ const myIframe = document.getElementById('MyIframe')
 
 
 function start() {
+    document.getElementById('avancar').style.visibility = "visible"
     var path = localStorage.getItem("type")
     console.log(path)
     if (path === "Estagiario") {
         myIframe.src = IUrl
     } else {
         myIframe.src = empresaIUrl
+    }
+}
+
+function startLogin() {
+    localStorage.setItem('coisa','')
+    document.getElementById('avancar').style.visibility = "hidden"
+    var path = localStorage.getItem("type")
+    if (path === "Estagiario") {
+        myIframe.src = loginEstagiario
+    } else {
+        myIframe.src = loginEmpresa
     }
 }
 
@@ -156,6 +171,7 @@ function createAllForm() {
 window.onload = () => {
     if (localStorage.getItem('locate') === "Cadastro") {
         start()
+    }else{
+        startLogin()
     }
-    console.log("outro fluxo ")
 }
