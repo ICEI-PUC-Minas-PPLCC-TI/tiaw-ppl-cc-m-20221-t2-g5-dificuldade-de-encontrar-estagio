@@ -5,3 +5,4 @@ function avancar(type){
     window.open('../listar_empresas/index.html')
     }
 }
+

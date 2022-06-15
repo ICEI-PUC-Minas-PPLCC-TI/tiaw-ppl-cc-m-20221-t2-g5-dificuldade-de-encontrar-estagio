@@ -108,9 +108,10 @@ function goOn(firstView, clicked) {
 function getFormsIValue() {
     const iframeWindow = myIframe.contentWindow;
     var form = iframeWindow.document.getElementById("formI");
+    console.log(form.name.value)
     if (form.name.value != "" && form.email.value != "" && form.pass.value != "" && form.confirmPass.value != "") {
 
-        if (form.pass.value === form.confirmPass.value) {
+        if (form.pass.value === form.confirmPass.value && form.pass.value != "" && form.confirmPass.value != "") {
             var firstOne = {
                 "name": form.name.value,
                 "email": form.email.value,
