@@ -1,0 +1,39 @@
+body{
+  background-color: white;
+  }
+  a.list-group-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height:auto;
+      min-height:220px;
+  }
+  a.list-group-item.active small {
+      color:#fff;
+  }
+  .stars {
+      margin:20px auto 1px;   
+  }
+  .btn{
+      background-color: #182c6d;
+      margin-top:60% ;
+  }
+  .well{
+      background-color: #182c6d;
+      color: white;
+  }
+  .media-object{
+      
+      max-width: 200px;
+      max-height: 150px;
+  }
+
+  li{
+      color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-top: 4%;
+      font-size: 110%;
+  }
+  h5{
+      color: black;
+  }
