@@ -97,6 +97,23 @@ input:focus {
     
 }
 
+.avancar{
+    margin-top: 2rem;
+    transition: all .2s ease-out;
+    height: 40px;
+    width: 8rem;
+    border: none;
+    background-color: #182c6d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .avancar:hover{
+    background-color: #1b3792;
+    width: 8.5rem;
+    transition: all .2s ease-out;
+    }
 @media only screen and (min-width: 950px) {
 
 
