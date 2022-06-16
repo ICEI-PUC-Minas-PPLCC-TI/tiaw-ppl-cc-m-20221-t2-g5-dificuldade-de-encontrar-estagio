@@ -11,7 +11,11 @@
 </head>
 
 <body>
+    <div class="nav">
+        <img src="../images/unknown.png" alt="Home" id="imgnav" onclick="location.href='../Landingpage/index.html'">
+    </div>
     <main>
+     
         <div class="forms">
             <div class="card" id="e">
 
@@ -23,19 +27,18 @@
 
             <form class="formulario" id="formI">
                 <input type="text" id="name" placeholder="Nome">
-
                 <input type="text" id="email" placeholder="Email">
-
                 <input type="password" id="pass" placeholder="Senha">
-
                 <input type="password" id="confirmPass" placeholder="Confirmar senha">
-                
-               
+                <button class="avancar" onclick="getFormsIValue(event)">Avançar</button>
+
             </form>
+            
         </div>
 
 
     </main>
+    <script src="./js.js"></script>
 </body>
 
 </html>

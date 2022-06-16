@@ -1,6 +1,6 @@
 
 function typeCadastro(type) {
     localStorage.setItem('type', type)
-    location.href="../utils/nav.html"
+    location.href="../C-Estagiario/index.html"
     console.log(type);
 }

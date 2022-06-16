@@ -92,16 +92,10 @@ function goOn(firstView, clicked) {
                     count++
                     myIframe.src = empresaIIUrl;
                     alert("tudo certo")
-
                     break
-
-
-
             }
         }
     }
-
-
 }
 
 
@@ -123,6 +117,8 @@ function getFormsIValue() {
         }
         console.log(firstOne);
     }
+    alert("Campos invalidos")
+    return
 }
 
 function getFormsIIValue() {

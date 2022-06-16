@@ -131,6 +131,40 @@ input:focus {
     margin: 0px !important;
 }
 
+
+#imgnav {
+    width: 4rem;
+    margin: 0.75rem;
+}
+
+#btnnav {
+    font-family: 'Dicipullus';
+    margin-right: 2rem;
+    width: 4rem;
+    height: 2.5rem;
+    background-color: #182c6d;
+    color: white;
+    font-size: larger;
+    border: solid 0.1rem;
+    border-color: #182c6d;
+    font-size: larger;
+}
+
+#btnnav:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    width: 100%;
+    background-color: #182c6d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0%;
+}
+
+
 @media only screen and (min-width: 950px) {
 
 
@@ -158,6 +192,7 @@ input:focus {
         padding-right: 20px;
 
     }
+
 
 
 
