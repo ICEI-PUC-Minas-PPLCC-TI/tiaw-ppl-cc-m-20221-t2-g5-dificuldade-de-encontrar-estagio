@@ -1,39 +1,92 @@
 body{
-  background-color: white;
-  }
-  a.list-group-item {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      height:auto;
-      min-height:220px;
-  }
-  a.list-group-item.active small {
-      color:#fff;
-  }
-  .stars {
-      margin:20px auto 1px;   
-  }
-  .btn{
-      background-color: #182c6d;
-      margin-top:60% ;
-  }
-  .well{
-      background-color: #182c6d;
-      color: white;
-  }
-  .media-object{
-      
-      max-width: 200px;
-      max-height: 150px;
-  }
-
-  li{
-      color: black;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin-top: 4%;
-      font-size: 110%;
-  }
-  h5{
-      color: black;
-  }
+    margin: 0%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background: #a8a8a8;
+    background: -webkit-linear-gradient(to bottom, #a8a8a8, #000b23); 
+    background: linear-gradient(to bottom, #a8a8a8, #000b23);
+}
+h1{
+    color: white;
+}
+#imgnav {
+    width: 4rem;
+    margin: 0.75rem;
+}
+.nav {
+    width: 100%;
+    background-color: #182c6d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0%;
+    margin-bottom: 5rem;
+}
+.listagem{
+    background-color: #182c6d;
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+.item{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+}
+.userImg{
+    width: 15rem;
+}
+.caracteristicas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.caracteristica{
+    margin-bottom:1rem;
+}
+.btnDetalhes{
+    margin-top: 2rem;
+    transition: all .2s ease-out;
+    height: 40px;
+    width: 8rem;
+    border: none;
+    background-color: #182c6d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+.btnDetalhes:hover{
+    background-color: #1b3792;
+    width: 8.5rem;
+    transition: all .2s ease-out;
+}
+@media screen and (min-width:768px) {
+    .listagem{
+        width: 60%;
+    }
+    .item{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        padding: 1rem;
+        
+    }
+    .item:hover{
+        border: solid 0.2rem;
+        border-color: white;
+    }
+}
