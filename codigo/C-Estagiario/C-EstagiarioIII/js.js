@@ -9,8 +9,20 @@ function getFormsIIIValue(event){
     event.preventDefault();
     var form = document.getElementById("formIII");
     const chkandamento = document.querySelector('#andamento:checked') !== null
-    if(form.empOrAuto.value != "" && form.cargo.value != "" && form.breveDesc.value != ""){
+    if(chkandamento === true){
         var turdone = {
+            "id":1,
+            "andamento": chkandamento,
+            "empOrAuto": form.empOrAuto.value,
+            "breveDesc": form.breveDesc.value,
+            "cargo": form.cargo.value
+        }
+        localStorage.setItem("turdone", JSON.stringify(turdone))
+        window.location.href="../C-EstagiarioIV/index.html"
+
+    }else if(form.empOrAuto.value != "" && form.cargo.value != "" && form.breveDesc.value != ""){
+        var turdone = {
+            "id":1,
             "andamento": chkandamento,
             "empOrAuto": form.empOrAuto.value,
             "breveDesc": form.breveDesc.value,

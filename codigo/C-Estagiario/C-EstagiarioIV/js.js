@@ -17,6 +17,7 @@ function getFormsIVValue(event) {
             console.log(checkedI)
 
             var lastOne = {
+                "id":1,
                 "competencia": form.competencia.value,
                 "tecnicaCH": checked,
                 "cognitivaCH": checkedI,

@@ -6,6 +6,7 @@ function getFormsIValue(event) {
 
         if (form.pass.value === form.confirmPass.value && form.pass.value != "" && form.confirmPass.value != "") {
             var firstOne = {
+                "id":1,
                 "name": form.name.value,
                 "email": form.email.value,
                 "pass": form.pass.value,
