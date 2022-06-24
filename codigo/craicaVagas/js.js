@@ -9,6 +9,6 @@ function getFormsValue() {
         "horasdiarias": form.iphoras.value,
         "descricao": form.ipdescricao.value,
     }
-    localStorage.setItem("novavaga",novavaga)
+    localStorage.setItem("novavaga", JSON.stringify(novavaga))
     console.log(novavaga)
 }
