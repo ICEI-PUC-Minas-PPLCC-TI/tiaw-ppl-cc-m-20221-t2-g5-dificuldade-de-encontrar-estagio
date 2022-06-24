@@ -1,0 +1,63 @@
+.container{
+    justify-content: center;
+    display: flex;
+}
+.caixa{
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-top: 3rem;
+    width: 90%;
+    background-color: #000b23;
+}
+.conteudo{
+    align-items: center;
+    display: flex;
+    background-color: #182c6d;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 95%;
+    border-radius: 1.5cm;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.info{
+    width: 50%;
+    padding-left: 1rem;
+    border: none;
+    border-right: 1px solid white;
+}
+.info-item{
+    margin-top: 2.75rem;
+}
+.info2-item{
+font-size: smaller;
+}
+.h4-container{
+    width: 50%;
+}
+.info2{
+    width: 50%;
+    padding-left: 1rem;
+}
+h3{
+    text-align: center;
+}
+.chk{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+input{
+    margin-left: -1px;
+}
+label{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+h4{
+    font-size: small;
+}

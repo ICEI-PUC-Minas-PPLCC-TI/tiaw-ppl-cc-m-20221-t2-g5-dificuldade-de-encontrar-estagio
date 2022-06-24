@@ -4,7 +4,7 @@ function avancar(event) {
     console.log(form.name.value)
     if (form.name.value != "" && form.email.value != ""  && form.contact.value != "" && form.pass.value != "" && form.confirmPass.value != "") {
         if (form.pass.value === form.confirmPass.value && form.pass.value != "" && form.confirmPass.value != "") {
-            var firstOne = {
+            var secondone = {
                 "name": form.name.value,
                 "email": form.email.value,
                 "contact":  form.contact.value,
@@ -12,8 +12,8 @@ function avancar(event) {
                 "confimPass": form.confirmPass.value
             }
             
-            localStorage.setItem('firstOne',JSON.stringify(firstOne));
-            window.location.href="./C-EstagiarioII/index.html"
+            localStorage.setItem('secondoneEmpresa',JSON.stringify(secondone));
+            window.location.href='../../vagas_estagiario/index.html'
 
         } else {
          alert("As senhas devem ser identicas")
