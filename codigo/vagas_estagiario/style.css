@@ -1,599 +1,128 @@
-body{
-    background: #a8a8a8;
-    background: -webkit-linear-gradient(to bottom, #a8a8a8, #000b23); 
-    background: linear-gradient(to bottom, #a8a8a8, #000b23);
-    } 
-    ul li {
-      margin-bottom:1.5rem;
-    }
-    .pricing-divider {
-    border-radius: 10%;
-    background: #182c6d;
-    padding: 1em 0 4em;
-    position: relative;
-    }
-    .blue .pricing-divider{
-    background: #182c6d; 
-    }
-    .green .pricing-divider {
-    background: #182c6d; 
-    }
-    .red b {
-      color:#182c6d
-    }
-    .blue b {
-      color:#182c6d
-    }
-    .green b {
-      color:#182c6d
-    }
-    .pricing-divider-img {
-        position: absolute;
-        bottom: -3%;
-        left: 0;
-        width: 100%;
-        height: 40%;
-    }
-    .deco-layer {
-        -webkit-transition: -webkit-transform 0.5s;
-        transition: transform 0.5s;
-    }
-    .btn-custom  {
-      background:#182c6d; color:#fcfcfd; border-radius:20px
-    }
-    
-    .img-float {
-      width:50px; position:absolute;top:-3.5rem;right:1rem
-    }
-    
-    .princing-item {
-      transition: all 150ms ease-out;
-    }
-    
-    .princing-item:hover {
-      transform: scale(1.05);
-    }
-    .princing-item:hover .deco-layer--1 {
-      -webkit-transform: translate3d(15px, 0, 0);
-      transform: translate3d(15px, 0, 0);
-    }
-    .princing-item:hover .deco-layer--2 {
-      -webkit-transform: translate3d(-15px, 0, 0);
-      transform: translate3d(-15px, 0, 0);
-    }
-    .vagarecomendada{
-      color: white;
-      background-color: #182c6d;
-      text-align: center;
-      margin-bottom: 0%;
-      margin-top: 2.5%;
-      width: 40%;
-      border-radius: 15px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-    
-    .card-body{
-      margin-bottom: 30%;
-    }
+html {
+  background-color: rgb(238, 240, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-    #imgnav {
-      width: 4rem;
-      margin: 0.75rem;
-  }
-  
-  #btnnav {
-      font-family: 'Dicipullus';
-      margin-right: 2rem;
-      width: 4rem;
-      height: 2.5rem;
-      background-color: #182c6d;
-      color: white;
-      font-size: larger;
-      border: solid 0.1rem;
-      border-color: #182c6d;
-      font-size: larger;
-  }
-  
-  #btnnav:hover {
-      text-decoration: underline;
-  }
-  
-  .nav {
-      width: 100%;
-      background-color: #182c6d;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      top: 0%;
-      z-index: 2;
-      -webkit-box-shadow: 0px 13px 20px -1px #0000005e; 
-      box-shadow: 0px 13px 20px -1px #0000005e;
-  }
-  
-    
-    
-    
-    
-    
-    
-    
-    @media screen and (max-width: 768px) {
-    
-      
-    ul li {
-      margin-bottom:1.4rem;
-    }
-    .pricing-divider {
-    border-radius: 10%;
-    background: #182c6d;
-    padding: 7em 0 10em;
-    position: relative;
-    }
-    .blue .pricing-divider{
-    background: #182c6d; 
-    }
-    .green .pricing-divider {
-    background: #182c6d; 
-    }
-    .red b {
-      color:#182c6d
-    }
-    .blue b {
-      color:#182c6d
-    }
-    .green b {
-      color:#182c6d
-    }
-    .pricing-divider-img {
-        position: absolute;
-        bottom: -3%;
-        left: 0;
-        width: 100%;
-        height: 40%;
-    }
-    .deco-layer {
-        -webkit-transition: -webkit-transform 0.5s;
-        transition: transform 0.5s;
-    }
-    .btn-custom  {
-      background:#182c6d; color:#fcfcfd; border-radius:20px
-    }
-    
-    .img-float {
-      width:50px; position:absolute;top:-3.5rem;right:1rem
-    }
-    
-    .princing-item {
-      transition: all 150ms ease-out;
-    }
-    .princing-item:hover {
-      transform: scale(1.05);
-    }
-    .princing-item:hover .deco-layer--1 {
-      -webkit-transform: translate3d(15px, 0, 0);
-      transform: translate3d(15px, 0, 0);
-    }
-    .princing-item:hover .deco-layer--2 {
-      -webkit-transform: translate3d(-15px, 0, 0);
-      transform: translate3d(-15px, 0, 0);
-    }
-      
-    .vagarecomendada{
-      color: white;
-      background-color: #182c6d;
-      text-align: center;
-      margin-bottom: 0%;
-      margin-top: 2.5%;
-      width: 50%;
-      border-radius: 15px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-      .container-recomendada{
-        width: 10%;
-      }
-    
-    .card-body{
-      margin-bottom: 30%;
-    }
-      
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    @media screen and (max-width: 992px){
-      
-      ul li {
-      margin-bottom:1.4rem;
-    }
-    .pricing-divider {
-    border-radius: 10%;
-    background: #182c6d;
-    padding: 8em 0 15em;
-    position: relative;
-    }
-    .blue .pricing-divider{
-    background: #182c6d; 
-    }
-    .green .pricing-divider {
-    background: #182c6d; 
-    }
-    .red b {
-      color:#182c6d
-    }
-    .blue b {
-      color:#182c6d
-    }
-    .green b {
-      color:#182c6d
-    }
-    .pricing-divider-img {
-        position: absolute;
-        bottom: -3%;
-        left: 0;
-        width: 100%;
-        height: 40%;
-    }
-    .deco-layer {
-        -webkit-transition: -webkit-transform 0.5s;
-        transition: transform 0.5s;
-    }
-    .btn-custom  {
-      background:#182c6d; color:#fcfcfd; border-radius:20px;
-    }
-    
-    .img-float {
-      width:50px; position:absolute;top:-3.5rem;right:1rem
-    }
-    
-    .princing-item {
-      transition: all 150ms ease-out;
-      
-    }
-    .princing-item:hover {
-      transform: scale(1.05);
-    }
-    .princing-item:hover .deco-layer--1 {
-      -webkit-transform: translate3d(15px, 0, 0);
-      transform: translate3d(15px, 0, 0);
-    }
-    .princing-item:hover .deco-layer--2 {
-      -webkit-transform: translate3d(-15px, 0, 0);
-      transform: translate3d(-15px, 0, 0);
-    }
-    .vagarecomendada{
-      color: white;
-      background-color: #182c6d;
-      text-align: center;
-      margin-bottom: 0%;
-      margin-top: 2.5%;
-      width: 50%;
-      border-radius: 15px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-    .container-fluid{
-      text-align: center;
-    }
-    .card-body{
-      margin-bottom: 30%;
-    }
-    .col-sm-12.col-md-8.col-lg-4{
-      margin-left: auto;
-      margin-right: auto;
-    }
-      
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-      @media screen and (max-width: 520px){
-    #card-container{
-        max-width: 430px !important;
-        width: 100% !important;
-        
-    }
+body {
+  width: 100%;
+}
 
-    ul li {
-      margin-bottom:1.4rem;
-    }
-    .h3 {
-        font-size: 20%;
-    }
-    .h5{
-      font-size: 20%;
-    }  
-    .pricing-divider {
-    border-radius: 10%;
-    background: #182c6d;
-    padding: 5em 0 8em;
-    position: relative;
-    }
-    .blue .pricing-divider{
-    background: #182c6d; 
-    }
-    .green .pricing-divider {
-    background: #182c6d; 
-    }
-    .red b {
-      color:#182c6d
-    }
-    .blue b {
-      color:#182c6d
-    }
-    .green b {
-      color:#182c6d
-    }
-    .pricing-divider-img {
-        position: absolute;
-        bottom: -3%;
-        left: 0;
-        width: 100%;
-        height: 40%;
-    }
-    .deco-layer {
-        -webkit-transition: -webkit-transform 0.5s;
-        transition: transform 0.5s;
-    }
-    .btn-custom  {
-      background:#182c6d; color:#fcfcfd; border-radius:20px;
-    }
-    
-    .img-float {
-      width:50px; position:absolute;top:-3.5rem;right:1rem
-    }
-    
-    .princing-item {
-      transition: all 150ms ease-out;
-      
-    }
-    .princing-item:hover {
-      transform: scale(1.05);
-    }
-    .princing-item:hover .deco-layer--1 {
-      -webkit-transform: translate3d(15px, 0, 0);
-      transform: translate3d(15px, 0, 0);
-    }
-    .princing-item:hover .deco-layer--2 {
-      -webkit-transform: translate3d(-15px, 0, 0);
-      transform: translate3d(-15px, 0, 0);
-    }
-    .vagarecomendada{
-      color: white;
-      background-color: #182c6d;
-      text-align: center;
-      margin-bottom: 0%;
-      margin-top: 2.5%;
-      width: 80%;
-      border-radius: 15px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-      
-    }
-    .container-fluid{
-      text-align: center;
-    }
-    .card-body{
-      margin-bottom: 30%;
-    }
-    .col-sm-12.col-md-8.col-lg-4{
-      margin-left: auto;
-      margin-right: auto;
-    }
-      
-    }
-    
-    
-    
-    
-    
-    @media screen and (max-width: 375px){
-    ul li {
-      margin-bottom:1.4rem;
-    }
-    .h3 {
-        font-size: 20%;
-    }
-    .h5{
-      font-size: 20%;
-    }  
-    .pricing-divider {
-    border-radius: 10%;
-    background: #182c6d;
-    padding: 5em 0 8em;
-    position: relative;
-    }
-    .blue .pricing-divider{
-    background: #182c6d; 
-    }
-    .green .pricing-divider {
-    background: #182c6d; 
-    }
-    .red b {
-      color:#182c6d
-    }
-    .blue b {
-      color:#182c6d
-    }
-    .green b {
-      color:#182c6d
-    }
-    .pricing-divider-img {
-        position: absolute;
-        bottom: -3%;
-        left: 0;
-        width: 100%;
-        height: 40%;
-    }
-    .deco-layer {
-        -webkit-transition: -webkit-transform 0.5s;
-        transition: transform 0.5s;
-    }
-    .btn-custom  {
-      background:#182c6d; color:#fcfcfd; border-radius:20px;
-    }
-    
-    .img-float {
-      width:50px; position:absolute;top:-3.5rem;right:1rem
-    }
-    
-    .princing-item {
-      transition: all 150ms ease-out;
-      
-    }
-    .princing-item:hover {
-      transform: scale(1.05);
-    }
-    .princing-item:hover .deco-layer--1 {
-      -webkit-transform: translate3d(15px, 0, 0);
-      transform: translate3d(15px, 0, 0);
-    }
-    .princing-item:hover .deco-layer--2 {
-      -webkit-transform: translate3d(-15px, 0, 0);
-      transform: translate3d(-15px, 0, 0);
-    }
-    .vagarecomendada{
-      color: white;
-      background-color: #182c6d;
-      text-align: center;
-      margin-bottom: 0%;
-      margin-top: 2.5%;
-      width: 80%;
-      border-radius: 15px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: small;
-    }
-    .container-fluid{
-      text-align: center;
-    }
-    .card-body{
-      margin-bottom: 30%;
-    }
-    .col-sm-12.col-md-8.col-lg-4{
-      margin-left: auto;
-      margin-right: auto;
-    }
-      
-    }
-    
-    
-    
-    
-    
-    
-    
-    @media screen and (max-width: 320px){
-    ul li {
-      margin-bottom:1.4rem;
-    }
-    .h3 {
-        font-size: 20%;
-    }
-    .h5{
-      font-size: 20%;
-    }  
-    .pricing-divider {
-    border-radius: 10%;
-    background: #182c6d;
-    padding: 5em 0 8em;
-    position: relative;
-    width: 120%;
-    }
-    
-    .card-body{
-      width:120%;
-    }
-    .blue .pricing-divider{
-    background: #182c6d; 
-    }
-    .green .pricing-divider {
-    background: #182c6d; 
-    }
-    .red b {
-      color:#182c6d
-    }
-    .blue b {
-      color:#182c6d
-    }
-    .green b {
-      color:#182c6d
-    }
-    .pricing-divider-img {
-        position: absolute;
-        bottom: -3%;
-        left: 0;
-        width: 100%;
-        height: 40%;
-    }
-    .deco-layer {
-        -webkit-transition: -webkit-transform 0.5s;
-        transition: transform 0.5s;
-    }
-    .btn-custom  {
-      background:#182c6d; color:#fcfcfd; border-radius:20px;
-    }
-    
-    .img-float {
-      width:50px; position:absolute;top:-3.5rem;right:1rem
-    }
-    
-    .princing-item {
-      transition: all 150ms ease-out;
-      
-    }
-    .princing-item:hover {
-      transform: scale(1.05);
-    }
-    .princing-item:hover .deco-layer--1 {
-      -webkit-transform: translate3d(15px, 0, 0);
-      transform: translate3d(15px, 0, 0);
-    }
-    .princing-item:hover .deco-layer--2 {
-      -webkit-transform: translate3d(-15px, 0, 0);
-      transform: translate3d(-15px, 0, 0);
-    }
-    .vagarecomendada{
-      color: white;
-      background-color: #182c6d;
-      text-align: center;
-      margin-bottom: 0%;
-      margin-top: 2.5%;
-      width: 100%;
-      border-radius: 15px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-      font-size: 10%;
-    }
-    .container-fluid{
-      text-align: center;
-    }
-    .card-body{
-      margin-bottom: 30%;
-    }
-    .col-sm-12.col-md-8.col-lg-4{
-      margin-left: auto;
-      margin-right: auto;
-    }
-      
-    }
-    
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: brown;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+#daniel {
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+#allvagas {
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+
+#main {
+  color: white;
+  background-image: linear-gradient(#182c6d 30%, white);
+  text-align: center;
+  margin-top: 2.5%;
+  width: 350px;
+  height: 600px;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.07s;
+
+  -webkit-box-shadow: 0px 2px 50px 8px rgba(0, 0, 0, 0.56);
+  box-shadow: 0px 2px 50px 8px rgba(0, 0, 0, 0.56);
+}
+
+#main:hover {
+  transition: 0.07s;
+  width: 360px;
+  height: 610px;
+}
+
+#container2 {
+  color: #182c6d;
+  margin: 2px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#title {
+  font-size: 2.5rem;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#imgnav {
+  width: 4rem;
+  margin: 0.75rem;
+}
+
+#btnnav {
+  font-family: 'Dicipullus';
+  margin-right: 2rem;
+  width: 4rem;
+  height: 2.5rem;
+  background-color: #182c6d;
+  color: white;
+  font-size: larger;
+  border: solid 0.1rem;
+  border-color: #182c6d;
+  font-size: larger;
+}
+
+#btnnav:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  width: 100%;
+  background-color: #182c6d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0%;
+}
+
+.vagarecomendada {
+  color: white;
+  background-color: #182c6d;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 2.5%;
+  width: 40%;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
