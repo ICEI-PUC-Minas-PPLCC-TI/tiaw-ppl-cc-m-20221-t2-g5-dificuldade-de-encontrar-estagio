@@ -9,7 +9,11 @@ function getFormsIIIValue(event){
     event.preventDefault();
     var form = document.getElementById("formIII");
     const chkandamento = document.querySelector('#andamento:checked') !== null
-    if(chkandamento === true){
+
+    if(chkandamento !== false){
+        localStorage.setItem("turdone", JSON.stringify(turdone))
+        window.location.href="../C-EstagiarioIV/index.html"
+    }else if(form.empOrAuto.value != "" && form.cargo.value != "" && form.breveDesc.value != ""){
         var turdone = {
             "id":1,
             "andamento": chkandamento,
