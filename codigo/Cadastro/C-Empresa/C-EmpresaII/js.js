@@ -13,12 +13,12 @@ function avancar(event) {
             }
             
             localStorage.setItem('secondoneEmpresa',JSON.stringify(secondone));
-            window.location.href='../../vagas_estagiario/index.html'
+            window.location.href='../../../vagas_estagiario/index.html'
 
         } else {
          alert("As senhas devem ser identicas")
         }
-            window.location.href = ""
+           
     } else {
         alert("Campos não Preenchidos")
     }

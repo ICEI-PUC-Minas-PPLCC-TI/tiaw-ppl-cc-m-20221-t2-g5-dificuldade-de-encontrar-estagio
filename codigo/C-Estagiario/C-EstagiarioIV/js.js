@@ -23,8 +23,8 @@ function getFormsIVValue(event) {
                 "cognitivaCH": checkedI,
             }
             alert("Cadastro finalizado")
-            window.location.href = '../../vagas_estagiario/index.html'
             localStorage.setItem('lastOne', JSON.stringify(lastOne));
+            window.location.href = '../../vagas_estagiario/index.html'
         }
     } else {
         alert("Campos invalidos")
