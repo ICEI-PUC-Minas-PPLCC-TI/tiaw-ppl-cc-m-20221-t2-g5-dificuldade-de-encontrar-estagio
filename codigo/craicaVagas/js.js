@@ -10,5 +10,6 @@ function getFormsValue() {
         "descricao": form.ipdescricao.value,
     }
     localStorage.setItem("novavaga", JSON.stringify(novavaga))
+    alert("Vaga criada com sucesso")
     console.log(novavaga)
 }

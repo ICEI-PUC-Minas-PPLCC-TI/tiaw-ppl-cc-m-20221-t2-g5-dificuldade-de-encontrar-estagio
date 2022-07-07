@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>empresas</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<body>
+  <div class="nav">
+    <img src="../images/unknown.png" alt="Home" id="imgnav" onclick="location.href='../Landingpage/index.html'">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Criar nova vaga
+      </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nova Vaga</h5>
+
+        </div>
+        <form id="novavaga" class="Novavaga">
+
+          <input type="text" name="" id="ipnome" class="txt" placeholder="Nome:">
+          <div class="boxCheckbox">
+            <h7 class="turno" id="Turno">Turno (pode escolher mais de um):</h7>
+            <div class="checkbox">
+              <h8 class="manha" id="manha">Manhã</h8>
+              <input type="checkbox" name="" id="ipmanha">
+              <h8 class="tarde" id="tarde">Tarde</h8>
+              <input type="checkbox" name="" id="iptarde">
+              <h8 class="noite" id="noite">Noite</h8>
+              <input type="checkbox" name="" id="ipnoite">
+            </div>
+          </div>
+
+          <input type="text" name="" id="ipatuacao" class="txt" placeholder="Área de atuação:">
+          <input type="text" name="" id="iphoras" class="txt" placeholder="Horas diárias:">
+          <input type="text" name="" id="ipdescricao" class="txt" placeholder="Descrição da vaga:">
+
+
+
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" onclick="novavagaSaveValue()" class="btn btn-primary">Avançar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <div class="vagarecomendada">
+    <h1>ESTAGIÁRIOS</h1>
+  </div>
+  <div class="container">
+    <div id="allvagas"></div>
+  </div>
+
+  <script src="./js.js"></script>
+</body>
+
+</html>
+
+</html>
