@@ -11,7 +11,7 @@ function avancar(event)
         }
 
         localStorage.setItem('login', JSON.stringify(login));
-        window.location.href="indexEmpresa.html"
+        window.location.href="../../listar_empresas/index.html"
     }
     else 
     {

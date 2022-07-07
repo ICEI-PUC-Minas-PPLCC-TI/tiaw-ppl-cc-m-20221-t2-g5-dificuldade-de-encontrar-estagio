@@ -13,7 +13,7 @@ function avancar(event) {
             }
             
             localStorage.setItem('secondoneEmpresa',JSON.stringify(secondone));
-            window.location.href='../../listar_empresas/index.html'
+            window.location.href='../../../listar_empresas/index.html'
 
         } else {
          alert("As senhas devem ser identicas")

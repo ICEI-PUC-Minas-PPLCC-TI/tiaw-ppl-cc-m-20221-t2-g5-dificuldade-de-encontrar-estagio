@@ -11,7 +11,7 @@ function avancar(event)
         }
 
         localStorage.setItem('nome', JSON.stringify(nome));
-        window.location.href="indexEstagiario.html"
+        window.location.href="../../vagas_estagiario/index.html"
     }
     else 
     {
