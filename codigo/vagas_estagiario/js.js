@@ -73,38 +73,7 @@ const arrayall = [
     },
 ];
 window.onload = () => {
-    coisa();
     getAllVagas();
-}
-
-function coisa() {
-    let vagasContainer = document.querySelector("#daniel")
-    vagasContainer.innerHTML = ""
-    array.forEach((data) => {
-        let id = data.id
-        let titulo = data.nome
-        let nomeVaga = data.nomeVagas
-        let horas = data.horas
-        let turno = data.turno
-        let container = `
-        <div class="containerCard" data-id="${id}>
-            <div class="main" id="main">
-                <div id="title">
-                  <h1 class="titleh1">${titulo}</h1>
-                 </div>
-                 <div id="container2">
-
-                     <h3 class="nomeVaga">Nome da vaga: ${nomeVaga}</h3>
-           
-                    <h3 class="horas">Horas diarias: ${horas}</h3>
-                    <h3 class="turno">Turno de trabalho: ${turno}</h3>
-                 </div>
-                 
-            </div>
-        </div>`;
-        vagasContainer.innerHTML += container;
-    })
-
 }
 function getAllVagas() {
     let vagasContainer = document.querySelector("#allvagas")
