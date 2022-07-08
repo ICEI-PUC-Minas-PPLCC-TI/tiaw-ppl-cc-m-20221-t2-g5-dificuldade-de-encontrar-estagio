@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div class="nav">
+        <img src="../../images/unknown.png" alt="Home" id="imgnav" onclick="location.href='../../../Landingpage/index.html'">
+    </div>
     <main>
         <div class="forms">
             <div class="card" id="e">
@@ -27,18 +30,19 @@
 
                 <input type="text" id="email" placeholder="Email">
 
-                <input type="password" id="contact" placeholder="Contato">
+                <input type="text" id="contact" placeholder="Contato">
 
                 <input type="password" id="pass" placeholder="Senha">
 
                 <input type="password" id="confirmPass" placeholder="Confirmar senha">
                 
-               
+                <button class="avancar" onclick="avancar(event)">Avançar</button>
             </form>
         </div>
 
 
     </main>
+    <script src="./js.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,172 @@
+html {
+  background-color: rgb(238, 240, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: brown;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+#daniel {
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+#allvagas {
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+
+#main {
+  color: white;
+  background-image: linear-gradient(#182c6d 30%, white);
+  text-align: center;
+  margin-top: 2.5%;
+  width: 350px;
+  height: 600px;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.07s;
+
+  -webkit-box-shadow: 0px 2px 50px 8px rgba(0, 0, 0, 0.56);
+  box-shadow: 0px 2px 50px 8px rgba(0, 0, 0, 0.56);
+}
+
+#main:hover {
+  transition: 0.07s;
+  width: 360px;
+  height: 610px;
+}
+
+#container2 {
+  color: #182c6d;
+  margin: 2px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#title {
+  font-size: 2.5rem;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#imgnav {
+  width: 4rem;
+  margin: 0.75rem;
+}
+
+#btnnav {
+  font-family: 'Dicipullus';
+  margin-right: 2rem;
+  width: 4rem;
+  height: 2.5rem;
+  background-color: #182c6d;
+  color: white;
+  font-size: larger;
+  border: solid 0.1rem;
+  border-color: #182c6d;
+  font-size: larger;
+}
+
+#btnnav:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  width: 100%;
+  background-color: #182c6d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0%;
+}
+
+.vagarecomendada {
+  color: white;
+  background-color: #182c6d;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 2.5%;
+  width: 40%;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* modal */
+.Novavaga{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 125%;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+
+}
+
+.modal-footer{
+  background-color: #182c6d;
+}
+.modal-header{    
+  background-color: #182c6d;
+  color: white;       
+}
+.modal-title{
+  font-size: 200%;
+}
+.nova-vaga{
+  font-size: 100%;
+}
+.txt{
+  border:none; 
+  border-bottom: 2px solid #182c6d;    
+  outline: none;
+  margin-bottom: 1.3rem;
+}
+.modal-content{
+  background-color: #a8a8a8;
+}
+.boxCheckbox{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1.3rem;
+
+}

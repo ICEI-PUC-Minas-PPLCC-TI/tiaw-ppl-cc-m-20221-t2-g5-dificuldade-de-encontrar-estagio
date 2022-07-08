@@ -11,7 +11,11 @@
 </head>
 
 <body>
+    <div class="nav">
+        <img src="../../images/unknown.png" alt="Home" id="imgnav" onclick="location.href='../Landingpage/index.html'">
+    </div>
     <main>
+       
         <div class="forms">
             <div class="card" id="e">
 
@@ -27,15 +31,16 @@
                     <button class="btn" onclick="exibir()"> <i id="addIcon" class="bi bi-plus-lg"></i></button>
                 </div>
 
-                <form class="formularioI" id="formularioI">
-                    <input type="text" placeholder="Competencia">
+                <form class="formularioI" id="formIV">
+                    <input type="text" placeholder="Competencia" id="competencia">
                     
                     <div class="ck-box">
-                        <input type="checkbox" name="andamento" id="andamento">
+                        <input type="checkbox" name="andamento" id="tecnicaCH" > 
                         <label id="tecnica">Tecnica</label>
-                        <input type="checkbox" name="andamento" id="andamento">
+                        <input type="checkbox" name="andamento" id="cognitivaCH" >
                         <label>Cognitiva</label>
                     </div>
+                    <button class="avancar" onclick="getFormsIVValue(event)">Avançar</button>
                
                     
 
