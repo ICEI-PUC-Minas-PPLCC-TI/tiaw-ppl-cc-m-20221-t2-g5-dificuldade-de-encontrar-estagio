@@ -16,6 +16,7 @@ function getData() {
     tudo.forEach((data) => {
         data.primeiro.forEach((data) => {
             let id = data.id;
+            let nomeEmpresa = data.nomeEmpresa
             let nomeVaga = data.nome
             let horas = data.horasdiarias
             let turnoM = data.turnoM
@@ -38,7 +39,7 @@ function getData() {
             <div class="containerCard" data-id="${id}>
                 <div class="main" id="main">
                     <div id="title">
-                      <h1 class="titleh1">Vagas</h1>
+                      <h1 class="titleh1">${nomeEmpresa}</h1>
                      </div>
                      <div id="container2">
     
@@ -68,6 +69,7 @@ function novavagaSaveValue() {
 
     var novavaga = {
         "id": 0,
+        "nomeEmpresa": form.ipnomeEmpresa.value,
         "nome": form.ipnome.value,
         "turnoM": ipmanha,
         "turnoT": iptarde,
