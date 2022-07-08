@@ -36,10 +36,10 @@ function getData() {
 
 
             let container = `
-            <div class="containerCard" data-id="${id}">
+            <div class="containerCard" data-id="${id}" >
             <div class="main" id="main">
                 <div id="title">
-                  <h1 class="titleh1">${nomeEmpresa}</h1>
+                  <h1 class="titleh1">${nomeEmpresa}, id : ${id}</h1>
 
                  </div>
                  <div id="container2">
@@ -49,7 +49,7 @@ function getData() {
                     <h3 class="horas">Horas diarias: ${horas}</h3>
                     <h3 class="turno">Turno de trabalho: ${turno}</h3>
                  </div>
-                 
+                 <button onclick="maisdetalhes(${id})">Cadastrar na vaga</button>
             </div>
         </div>`;
         vagasContainer.innerHTML += container;
@@ -61,5 +61,5 @@ function getData() {
 
 function maisdetalhes(id){
     console.log(id)
-    window.location.href = `../MAIS_INFO_VAGA/index.html?id=${id}`
+    alert('Você foi cadastrado na vaga de id' + " " + id)
 }
