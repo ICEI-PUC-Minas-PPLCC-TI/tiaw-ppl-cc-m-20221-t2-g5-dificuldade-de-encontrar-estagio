@@ -37,7 +37,7 @@ function getData() {
 
             let container = `
             <div class="containerCard" data-id="${id}>
-                <div class="main" id="main">
+                <div class="main" id="main" onclick="location.href='./Detalhes/index.html'">
                     <div id="title">
                       <h1 class="titleh1">${nomeEmpresa}</h1>
                      </div>
