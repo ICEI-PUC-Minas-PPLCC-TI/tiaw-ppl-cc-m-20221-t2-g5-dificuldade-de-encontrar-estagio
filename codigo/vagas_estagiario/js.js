@@ -1,94 +1,46 @@
-const array = [
-    {
-        'id': 1,
-        'nome': 'Coisa',
-        'turno': 'Manha',
-        'horas': '6',
-        'nomeVagas': 'Vaga1'
-    },
-    {
-        'id': 2,
-        'nome': 'Coisa1',
-        'turno': 'Tarde',
-        'horas': '6',
-        'nomeVagas': 'Vaga2'
-    },
-    {
-        'id': 3,
-        'nome': 'Coisa2',
-        'turno': 'Noite',
-        'horas': '4',
-        'nomeVagas': 'Vaga3'
-    },
-    {
-        'id': 4,
-        'nome': 'Coisa3',
-        'turno': 'Manha',
-        'horas': '6',
-        'nomeVagas': 'Vaga4'
-    }
-];
-const arrayall = [
-    {
-        'id': 1,
-        'nome': 'Coisa',
-        'turno': 'Manha',
-        'horas': '6',
-        'nomeVagas': 'Vaga1'
-    },
-    {
-        'id': 2,
-        'nome': 'Coisa1',
-        'turno': 'Tarde',
-        'horas': '6',
-        'nomeVagas': 'Vaga2'
-    },
-    {
-        'id': 3,
-        'nome': 'Coisa2',
-        'turno': 'Noite',
-        'horas': '4',
-        'nomeVagas': 'Vaga3'
-    },
-    {
-        'id': 4,
-        'nome': 'Coisa3',
-        'turno': 'Manha',
-        'horas': '6',
-        'nomeVagas': 'Vaga4'
-    },
-    {
-        'id': 5,
-        'nome': 'Coisa6',
-        'turno': 'Manha',
-        'horas': '4',
-        'nomeVagas': 'Vaga8'
-    },
-    {
-        'id': 6,
-        'nome': 'Coisa7',
-        'turno': 'Tarde',
-        'horas': '8',
-        'nomeVagas': 'Vaga7'
-    },
-];
 window.onload = () => {
-    getAllVagas();
+    getData();
 }
-function getAllVagas() {
+
+
+
+function getData() {
+    var first = {
+        "primeiro": JSON.parse(localStorage.getItem("novavaga"))
+    }
+    var tudo = []
+    tudo.push(first)
     let vagasContainer = document.querySelector("#allvagas")
     vagasContainer.innerHTML = ""
-    arrayall.forEach((data) => {
-        let id = data.id
-        let titulo = data.nome
-        let nomeVaga = data.nomeVagas
-        let horas = data.horas
-        let turno = data.turno
-        let container = `
-        <div class="containerCard" data-id="${id}>
+    tudo.forEach((data) => {
+      
+        data.primeiro.forEach((data) => {
+            let id = data.id;
+            let nomeEmpresa = data.nomeEmpresa
+            let nomeVaga = data.nome
+            let horas = data.horasdiarias
+            let turnoM = data.turnoM
+            let turnoN = data.turnoN
+            let turnoT = data.turnoT
+            let desc = data.descricao
+            let atuacao = data.atuacao
+            var turno;
+
+            if (turnoM == true) {
+                turno = 'Manhã'
+            } else if (turnoT == true) {
+                turno = 'Tarde'
+            } else {
+                turno = "Noite"
+            }
+
+
+            let container = `
+            <div class="containerCard" data-id="${id}">
             <div class="main" id="main">
                 <div id="title">
-                  <h1 class="titleh1">${titulo}</h1>
+                  <h1 class="titleh1">${nomeEmpresa}</h1>
+
                  </div>
                  <div id="container2">
 
@@ -101,7 +53,13 @@ function getAllVagas() {
             </div>
         </div>`;
         vagasContainer.innerHTML += container;
+        })
+
     })
 
 }
 
+function maisdetalhes(id){
+    console.log(id)
+    window.location.href = `../MAIS_INFO_VAGA/index.html?id=${id}`
+}

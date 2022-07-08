@@ -4,7 +4,6 @@ window.onload = () => {
 }
 
 
-
 function getData() {
     var first = {
         "primeiro": JSON.parse(localStorage.getItem("novavaga"))
@@ -67,8 +66,16 @@ function novavagaSaveValue() {
     const iptarde = document.querySelector('#iptarde:checked') !== null
     const ipnoite = document.querySelector('#ipnoite:checked') !== null
 
+    if(localStorage.getItem('novavaga') == null){
+        count = 0 
+    }else{
+        console.log(JSON.parse(localStorage.getItem('novavaga')).length)
+        var count = JSON.parse(localStorage.getItem('novavaga')).length
+    }
+  
+
     var novavaga = {
-        "id": 0,
+        "id": count + 1,
         "nomeEmpresa": form.ipnomeEmpresa.value,
         "nome": form.ipnome.value,
         "turnoM": ipmanha,
